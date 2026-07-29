@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.prev {
+	display: inline-block;
+	margin-bottom: 8px;
+	font-weight: 700;
+}
+.mass {
+	resize: vertical;
+	max-height: 200px;
+	width: 260px;
+	border-radius: 4px;
+}
+.doc {
+	display: block;
+	margin-bottom: 7px;
+}
+fieldset {
+	border-radius: 6px;
+	max-height: 1500px;
+	padding: 16px;
+	width: 350px;
+}
+
+.userdoc {
+	margin-top: 4px;
+	border-radius: 4px;
+	display: block;
+	width: 260px;
+	height: 25px;
+}
+button {
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.cbox {
+	display: block;
+	margin: 10px;
+}
