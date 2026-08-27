@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Урок 4</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/normaliz.css" />
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<span class="prev">Ваши личные данные</span>
+				<label class="doc">
+					Ваше имя
+					<input
+						class="userdoc"
+						type="text"
+						name="name"
+						placeholder="Имя"
+						required
+					/>
+				</label>
+				<label class="doc">
+					Ваш возраст
+					<input
+						class="userdoc"
+						type="number"
+						inputmode="numeric"
+						placeholder="Возраст"
+						required
+						name="age"
+					/>
+				</label>
+				<label class="doc">
+					Ваш номер телефона
+					<input
+						class="userdoc"
+						type="tel"
+						inputmode="tel"
+						placeholder="Номер телефона"
+						required
+						name="telephone"
+					/>
+				</label>
+				<label class="doc">
+					Ваша почта
+					<input
+						class="userdoc"
+						type="email"
+						inputmode="email"
+						placeholder="Почта"
+						required
+						name="email"
+					/>
+				</label>
+				<label class="doc">
+					<span class="doc">Сообщение</span>
+					<textarea
+						name="mass"
+						class="mass"
+						placeholder="Ваше сообщение"
+					></textarea>
+				</label>
+				<label class="doc checkbox-label">
+					<input type="checkbox" required name="cbox" class="checkbox" />
+					<span class="pravila">Я принимаю правила</span>
+				</label>
+				<button>Отправить</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
