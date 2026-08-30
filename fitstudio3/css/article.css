@@ -1,0 +1,116 @@
+html {
+	font-family: Ubuntu, sans-serif;
+	font-weight: 400;
+}
+body * {
+	box-sizing: border-box;
+}
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+.title {
+	max-width: 580px;
+	font-family: "Oswald";
+	font-weight: 600;
+	line-height: 115%;
+	text-transform: uppercase;
+	color: #2c332f;
+}
+.title-large {
+	margin-top: 80px;
+	font-size: 48px;
+	margin-bottom: 40px;
+}
+.text-article {
+	font-family: "Ubuntu";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: #535755;
+	margin-bottom: 20px;
+}
+.article-decor-wrapper {
+	position: relative;
+}
+.article-decor-wrapper::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	background: url("../img/decor.svg");
+	width: 528px;
+	height: 48px;
+}
+.article-decor-wrapper-1::before {
+	top: 100px;
+	left: -350px;
+}
+.gum-img {
+	width: 100%;
+}
+.article-mb {
+	margin-bottom: 80px;
+}
+.text-article-bt {
+	margin-bottom: 80px;
+}
+.title-medium {
+	font-size: 36px;
+	margin-bottom: 40px;
+}
+.centr-section {
+	max-width: 744px;
+	margin-bottom: 80px;
+}
+.text-centr {
+	margin-bottom: 20px;
+}
+.list {
+	max-width: 179px;
+	padding: 0;
+}
+.element {
+	margin-left: 16px;
+	margin-bottom: 12px;
+}
+.element::marker {
+	font-size: 22px;
+	color: #3596ed;
+}
+.article-decor-wrapper-2::before {
+	right: -350px;
+	bottom: 136px;
+}
+.video-mb {
+	margin-bottom: 40px;
+}
+.article-play-but {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	border: none;
+	width: 60px;
+	height: 60px;
+	background-color: #3596ed;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.last-txt {
+	display: inline-block;
+	margin-bottom: 120px;
+}
