@@ -1,0 +1,168 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
+html {
+	font-family: Ubuntu, sans-serif;
+	font-weight: 400;
+}
+body * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+.title {
+	max-width: 580px;
+	font-family: "Oswald";
+	font-weight: 600;
+	line-height: 115%;
+	text-transform: uppercase;
+	color: #2c332f;
+}
+.title-large {
+	margin-top: 80px;
+	font-size: 48px;
+	margin-bottom: 40px;
+}
+.text-article {
+	font-family: "Ubuntu";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 130%;
+	color: #535755;
+	margin-bottom: 20px;
+}
+.article-decor-wrapper {
+	position: relative;
+}
+.article-decor-wrapper::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	background: url(../img/decor-large.png);
+	width: 100%;
+	height: 48px;
+}
+.article-decor-wrapper-1::before {
+	top: 100px;
+	left: -350px;
+}
+.gum-img {
+	width: 100%;
+}
+.article-mb {
+	margin-bottom: 80px;
+}
+.text-article-bt {
+	margin-bottom: 80px;
+}
+.title-medium {
+	font-size: 36px;
+	margin-bottom: 40px;
+}
+.centr-section {
+	max-width: 744px;
+	margin-bottom: 80px;
+}
+.text-centr {
+	margin-bottom: 20px;
+}
+.list {
+	max-width: 230px;
+	padding: 0;
+	list-style-position: inside;
+}
+.element {
+	margin-left: 16px;
+	margin-bottom: 12px;
+}
+.element::marker {
+	font-size: 22px;
+	margin-right: 0px;
+	color: #3596ed;
+}
+.article-decor-wrapper-2::before {
+	right: -350px;
+	bottom: 136px;
+}
+.video-mb {
+	margin-bottom: 40px;
+}
+.article-play-but {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	padding: 0;
+	border: none;
+	width: 62px;
+	height: 60px;
+	background-color: #3596ed;
+	border-radius: 50%;
+	cursor: pointer;
+	-webkit-transition: background-color, 0.2s;
+	transition: background-color, 0.2s;
+}
+.article-play-but:hover {
+	background-color: #4dacff;
+}
+.last-txt {
+	display: inline-block;
+	margin-bottom: 120px;
+}
+
+@media (width<=768px) {
+	.article-decor-wrapper::before {
+		display: none;
+	}
+	.article-mb {
+		margin-bottom: 60px;
+	}
+	.title-medium {
+		font-size: 28px !important;
+	}
+	.title-large {
+		margin-top: 36px;
+		font-size: 33px;
+	}
+	.text-article-bt,
+	.title-large,
+	.centr-section,
+	.last-txt {
+		margin-bottom: 36px;
+	}
+}
+@media (width<=576px) {
+	.article {
+		padding-top: 60px;
+	}
+	.article-play-but {
+		width: 48px;
+		height: 48px;
+	}
+	.article-play-but img {
+		width: 20px;
+	}
+}
