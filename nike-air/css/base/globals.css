@@ -1,7 +1,6 @@
 .page {
 	font-family: var(--font-family);
 	font-weight: 400;
-	min-height: 200vh;
 }
 .page__body {
 	background-color: var(--bg-color);
