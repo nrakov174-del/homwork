@@ -1,0 +1,10 @@
+.menu__list {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+.menu__link {
+	color: var(--bg-color);
+	font-weight: 900;
+	font-size: 20px;
+}

@@ -1,0 +1,34 @@
+@media (width>1380px) {
+	.burger {
+		display: none;
+	}
+}
+.burger__icon-menu {
+	stroke: var(--bg-color);
+}
+@media (any-hover: hover) {
+	.header__burger:hover .burger__icon-menu {
+		stroke: var(--accent-color);
+	}
+}
+.burger__icon-menu {
+	transition: stroke 0.2s;
+}
+@media (width<=1380px) {
+	.burger {
+		position: relative;
+		z-index: var(--layer-3);
+	}
+	.burger svg {
+		width: 40px;
+		height: auto;
+	}
+	.burger--open .burger__icon-cross,
+	.burger__icon-menu {
+		display: block;
+	}
+	.burger__icon-cross,
+	.burger--open .burger__icon-menu {
+		display: none;
+	}
+}
