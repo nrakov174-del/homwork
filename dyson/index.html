@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="ru" class="page">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dyson</title>
+		<link rel="stylesheet" href="./css/index.css" />
+		<link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+		<script defer src="./js/index.js" type="module"></script>
+	</head>
+	<body class="page-body">
+		<div class="wrapper">
+			<header class="header">
+				<div class="header__container container">
+					<button
+						aria-expanded="false"
+						class="header__burger burger"
+						aria-label="меню"
+						title="меню"
+						aria-controls="header__menu"
+					>
+						<svg width="50" height="50" viewBox="0 0 50 50">
+							<use
+								class="burger__icon-menu"
+								href="./icon/sprite.svg#burger-menu"
+							></use>
+							<use
+								class="burger__icon-cross"
+								href="./icon/sprite.svg#menu-cross"
+							></use>
+						</svg>
+					</button>
+					<a href="#" class="header__logo">
+						<img
+							class="header__logo-img"
+							src="./icon/logo-icon.png"
+							alt="логотип фирмы Dyson"
+							width="183"
+							height="77"
+						/>
+					</a>
+					<nav
+						class="header__menu header__menu"
+						id="header__menu"
+						aria-label="главное меню"
+					>
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#Company-information" class="menu__link">О нас</a>
+							</li>
+							<li class="menu__item">
+								<a href="#delivery-payment" class="menu__link"
+									>Доставка и оплата</a
+								>
+							</li>
+							<li class="menu__item">
+								<a href="#product-registration" class="menu__link"
+									>Регистрация продукта</a
+								>
+							</li>
+							<li class="menu__item">
+								<a href="#service" class="menu__link">Сервис</a>
+							</li>
+							<li class="menu__item">
+								<a href="#licenses-certificates" class="menu__link"
+									>Сертификаты и лицензии</a
+								>
+							</li>
+						</ul>
+					</nav>
+					<button
+						class="header__basket basket"
+						aria-label="корзина товаров"
+						title="корзина товаров"
+					>
+						<svg width="36" height="36" viewBox="0 0 36 36">
+							<use
+								class="basket__icon-menu"
+								href="./icon/sprite.svg#basket"
+							></use>
+						</svg>
+					</button>
+				</div>
+			</header>
+			<main class="main">
+				<section class="hero">
+					<div class="container hero_container">
+						<div class="hero__inner">
+							<h1 class="title-large hero__title">
+								Уникальные технологии для ухода за волосами
+							</h1>
+							<p class="hero__desc text-large">
+								Идеальная укладка для всех типов волос вместе с Dyson
+							</p>
+							<a href="#" class="hero__link">Подробнее</a>
+							<picture class="hero__img-container">
+								<source srcset="./images/hero-bg--d.webp" type="image/webp" />
+								<img
+									width="745"
+									height="803"
+									decoding="async"
+									src="./images/hero-bg--d.webp"
+									alt="фотография женщины с феном Dyson"
+									fetchpriority="high"
+									class="hero__img"
+								/>
+							</picture>
+						</div>
+					</div>
+				</section>
+				<section class="products-info">
+					<div class="container products-info__container">
+						<div class="products-info__cards">
+							<div class="products-info__card">
+								<header class="products-info__card-header">
+									<picture>
+										<source
+											srcset="./images/cards-img/card-img--one.webp"
+											type="image/webp"
+										/>
+										<img
+											class="products-info__card-img"
+											width="325"
+											height="325"
+											src="./images/cards-img/card-img--one.png"
+											alt="Девушка сушит волосы феном"
+										/>
+									</picture>
+									<h3 class="products-info__card-title">Акции</h3>
+									<footer class="products-info__card-footer">
+										<a
+											href="#"
+											aria-label="Подробнее"
+											class="products-info__card-footer-link"
+											>Подробнее</a
+										>
+									</footer>
+								</header>
+							</div>
+							<div class="products-info__card">
+								<header class="products-info__card-header">
+									<picture>
+										<source
+											srcset="./images/cards-img/card-img--two.webp"
+											type="image/webp"
+										/>
+										<img
+											class="products-info__card-img"
+											width="325"
+											height="325"
+											src="./images/cards-img/card-img--two.png"
+											alt="фен дайсон"
+										/>
+									</picture>
+									<h3 class="products-info__card-title">Фены</h3>
+									<footer class="products-info__card-footer">
+										<a
+											href="#"
+											aria-label="Подробнее"
+											class="products-info__card-footer-link"
+											>Подробнее</a
+										>
+									</footer>
+								</header>
+							</div>
+							<div class="products-info__card">
+								<header class="products-info__card-header">
+									<picture>
+										<source
+											srcset="./images/cards-img/card-img--three.webp"
+											type="image/webp"
+										/>
+										<img
+											class="products-info__card-img"
+											width="325"
+											height="325"
+											src="./images/cards-img/card-img--three.png"
+											alt="стайлер дайсон"
+										/>
+									</picture>
+									<h3 class="products-info__card-title">Стайлеры</h3>
+									<footer class="products-info__card-footer">
+										<a
+											href="#"
+											aria-label="Подробнее"
+											class="products-info__card-footer-link"
+											>Подробнее</a
+										>
+									</footer>
+								</header>
+							</div>
+							<div class="products-info__card">
+								<header class="products-info__card-header">
+									<picture>
+										<source
+											srcset="./images/cards-img/card-img--four.webp"
+											type="image/webp"
+										/>
+										<img
+											class="products-info__card-img"
+											width="325"
+											height="325"
+											src="./images/cards-img/card-img--four.png"
+											alt="Выпрямители дайсон"
+										/>
+									</picture>
+									<h3 class="products-info__card-title">Выпрямители</h3>
+									<footer class="products-info__card-footer">
+										<a
+											href="#"
+											aria-label="Подробнее"
+											class="products-info__card-footer-link"
+											>Подробнее</a
+										>
+									</footer>
+								</header>
+							</div>
+							<div class="products-info__card">
+								<header class="products-info__card-header">
+									<picture>
+										<source
+											srcset="./images/cards-img/card-img--one.webp"
+											type="image/webp"
+										/>
+										<img
+											class="products-info__card-img"
+											width="325"
+											height="325"
+											src="./images/cards-img/card-img--one.png"
+											alt="Девушка сушит волосы феном"
+										/>
+									</picture>
+									<h3 class="products-info__card-title">Акции</h3>
+									<footer class="products-info__card-footer">
+										<a
+											href="#"
+											aria-label="Подробнее"
+											class="products-info__card-footer-link"
+											>Подробнее</a
+										>
+									</footer>
+								</header>
+							</div>
+							<div class="products-info__card">
+								<header class="products-info__card-header">
+									<picture>
+										<source
+											srcset="./images/cards-img/card-img--two.webp"
+											type="image/webp"
+										/>
+										<img
+											class="products-info__card-img"
+											width="325"
+											height="325"
+											src="./images/cards-img/card-img--two.png"
+											alt="фен дайсон"
+										/>
+									</picture>
+									<h3 class="products-info__card-title">Фены</h3>
+									<footer class="products-info__card-footer">
+										<a
+											href="#"
+											aria-label="Подробнее"
+											class="products-info__card-footer-link"
+											>Подробнее</a
+										>
+									</footer>
+								</header>
+							</div>
+							<div class="products-info__card">
+								<header class="products-info__card-header">
+									<picture>
+										<source
+											srcset="./images/cards-img/card-img--three.webp"
+											type="image/webp"
+										/>
+										<img
+											class="products-info__card-img"
+											width="325"
+											height="325"
+											src="./images/cards-img/card-img--three.png"
+											alt="стайлер дайсон"
+										/>
+									</picture>
+									<h3 class="products-info__card-title">Стайлеры</h3>
+									<footer class="products-info__card-footer">
+										<a
+											href="#"
+											aria-label="Подробнее"
+											class="products-info__card-footer-link"
+											>Подробнее</a
+										>
+									</footer>
+								</header>
+							</div>
+							<div class="products-info__card">
+								<header class="products-info__card-header">
+									<picture>
+										<source
+											srcset="./images/cards-img/card-img--four.webp"
+											type="image/webp"
+										/>
+										<img
+											class="products-info__card-img"
+											width="325"
+											height="325"
+											src="./images/cards-img/card-img--four.png"
+											alt="Выпрямители дайсон"
+										/>
+									</picture>
+									<h3 class="products-info__card-title">Выпрямители</h3>
+									<footer class="products-info__card-footer">
+										<a
+											href="#"
+											aria-label="Подробнее"
+											class="products-info__card-footer-link"
+											>Подробнее</a
+										>
+									</footer>
+								</header>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="hidden-text">
+					<div class="hidden-text__container container">
+						<div class="hidden-text__block">
+							<h2 class="hidden-text__block-title hidden-text__block-title--xl">
+								Базовый вектор развития
+							</h2>
+							<p class="hidden-text__block-text--xl text text-large--two">
+								Фены Dyson универсальны. Они подходят для сушки разных типов
+								волос. Насадки из комплекта помогают создавать укладки на любой
+								вкус. Функциональность девайсов впечатляет не меньше, чем их
+								уникальный дизайн.
+							</p>
+						</div>
+						<div class="hidden-text__block">
+							<h3 class="hidden-text__block-title hidden-text__block-title--l">
+								Базовый вектор развития
+							</h3>
+							<p class="hidden-text__block-text--l text text-large--two">
+								Фены Dyson универсальны. Они подходят для сушки разных типов
+								волос. Насадки из комплекта помогают создавать укладки на любой
+								вкус. Функциональность девайсов впечатляет не меньше, чем их
+								уникальный дизайн.
+							</p>
+						</div>
+						<div class="hidden-text__block">
+							<h4 class="hidden-text__block-title hidden-text__block-title--md">
+								Базовый вектор развития
+							</h4>
+							<p class="hidden-text__block-text--md text text-large--two">
+								Фены Dyson универсальны. Они подходят для сушки разных типов
+								волос. Насадки из комплекта помогают создавать укладки на любой
+								вкус. Функциональность девайсов впечатляет не меньше, чем их
+								уникальный дизайн.
+							</p>
+						</div>
+						<div class="hidden-text__block">
+							<h5 class="hidden-text__block-title hidden-text__block-title--sm">
+								Базовый вектор развития
+							</h5>
+							<p class="hidden-text__block-text--sm text text-large--two">
+								Фены Dyson универсальны. Они подходят для сушки разных типов
+								волос. Насадки из комплекта помогают создавать укладки на любой
+								вкус. Функциональность девайсов впечатляет не меньше, чем их
+								уникальный дизайн.
+							</p>
+						</div>
+						<div class="hidden-text__block">
+							<h6 class="hidden-text__block-title hidden-text__block-title--xs">
+								Базовый вектор развития
+							</h6>
+							<p class="hidden-text__block-text--xs text text-large--two">
+								Фены Dyson универсальны. Они подходят для сушки разных типов
+								волос. Насадки из комплекта помогают создавать укладки на любой
+								вкус. Функциональность девайсов впечатляет не меньше, чем их
+								уникальный дизайн.
+							</p>
+						</div>
+					</div>
+				</section>
+				<section class="expert-opinion">
+					<div class="container expert-opinion-container">
+						<div class="expert-opinion__description">
+							<h2 class="description__title title-medium">
+								Мнение экспертов о технике Dyson
+							</h2>
+							<div class="description__text-container">
+								<p class="description__text text-large--two">
+									Сегодня многие стилисты и салоны красоты в своей работе
+									используют технику от Dyson.
+								</p>
+								<p class="description__text text-large--two">
+									Несмотря на высокую стоимость, техника Dyson помогает
+									экономить. Мастера тратят меньше времени на сушку и укладку
+									волос, благодаря чему успевают обслужить большее количество
+									клиентов. Также устройства от Dyson потребляют значительно
+									меньше электроэнергии, не теряя свою мощность.
+								</p>
+								<p class="description__text text-large--two">
+									Фены Dyson универсальны. Они подходят для сушки разных типов
+									волос. Насадки из комплекта помогают создавать укладки на
+									любой вкус. Функциональность девайсов впечатляет не меньше,
+									чем их уникальный дизайн.
+								</p>
+								<p class="description__text text-large--two">
+									Ведущие стилисты отмечают, что техника Dyson для ухода за
+									волосами идеально подходят для длительной работы за счет своей
+									эргономичности. А за счет бесшумности инновационного мотора
+									использование устройств стало максимально комфортным.
+								</p>
+							</div>
+						</div>
+						<picture>
+							<source srcset="./images/expert-opinion-img.webp" />
+							<img
+								width="660"
+								height="660"
+								class="expert-opinion__img"
+								src="./images/expert-opinion-img.png"
+								alt="девушка с феном дайсон"
+							/>
+						</picture>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>

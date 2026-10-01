@@ -1,0 +1,132 @@
+.products-info__container {
+	/* mx 1413 mn 390 */
+	padding-top: clamp(31px, -0.898rem + 11.63vw, 150px);
+	padding-bottom: clamp(31px, -0.898rem + 11.63vw, 150px);
+}
+.products-info__cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+@media (width>390px) {
+	.products-info__cards {
+		gap: 20px;
+	}
+}
+@media (width<=390px) {
+	.products-info__cards {
+		gap: 10px;
+	}
+}
+.products-info__card {
+	box-shadow:
+		0 2px 21px 0 rgba(0, 0, 0, 0.05),
+		0 2px 21px 0 rgba(0, 0, 0, 0.05);
+	border-radius: 11px;
+	transition: background-color var(--transition-time);
+}
+.products-info__card-img {
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: var(--bg-color);
+}
+
+@media (width>768px) {
+	.products-info__card-img {
+		/* mx 1413 mn 390 */
+		width: clamp(142px, 4.515rem + 17.89vw, 325px);
+		height: clamp(142px, 4.515rem + 17.89vw, 325px);
+	}
+}
+@media (width<=768px) {
+	.products-info__card-img {
+		width: 170px;
+		height: 170px;
+	}
+}
+.products-info__card-title {
+	font-family: var(--second-family);
+	font-weight: 900;
+	/* mx 1413 mn 390 */
+	font-size: clamp(13px, 0.407rem + 1.66vw, 30px);
+	color: var(--main-color);
+	transition: background-color var(--transition-time);
+}
+@media (width>768px) {
+	.products-info__card-title {
+		margin-bottom: 11px;
+		margin-left: 40px;
+		margin-top: 19px;
+	}
+}
+@media (width<=768px) {
+	.products-info__card-title {
+		margin-bottom: 6px;
+		margin-left: 12px;
+		margin-top: 10px;
+	}
+}
+.products-info__card-footer-link {
+	display: inline-block;
+	font-family: var(--font-family);
+	font-weight: 400;
+	/* mx 1413 mn 390 */
+	font-size: clamp(11px, 0.378rem + 1.27vw, 24px);
+	color: var(--main-color);
+	transition: background-color var(--transition-time);
+}
+@media (width>768px) {
+	.products-info__card-footer-link {
+		margin-bottom: 30px;
+		margin-left: 40px;
+	}
+}
+@media (width<=768px) {
+	.products-info__card-footer-link {
+		margin-bottom: 15px;
+		margin-left: 12px;
+	}
+}
+.products-info__card-footer-link::after {
+	content: "";
+	display: inline-block;
+	/* mx 1413 mn 390 */
+	background-size: clamp(11px, 0.139rem + 2.25vw, 34px)
+		clamp(11px, 0.139rem + 2.25vw, 34px);
+	width: clamp(11px, 0.139rem + 2.25vw, 34px);
+	height: clamp(11px, 0.139rem + 2.25vw, 34px);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../../icon/arrow-black.svg);
+	transform: rotate();
+	fill: var(--main-color);
+}
+.products-info__card-footer-link {
+	display: flex;
+	align-items: center;
+}
+@media (width>768px) {
+	.products-info__card-footer-link {
+		gap: 20px;
+	}
+}
+@media (width<=768px) {
+	.products-info__card-footer-link {
+		gap: 9px;
+	}
+}
+@media (any-hover: hover) {
+	.products-info__card:hover {
+		background-color: var(--main-color);
+	}
+	.products-info__card:hover a {
+		color: var(--bg-color);
+	}
+	.products-info__card:hover h3 {
+		color: var(--bg-color);
+	}
+	.products-info__card:hover a::after {
+		background-image: url(../../icon/arrow-white.svg);
+	}
+}
