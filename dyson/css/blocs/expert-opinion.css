@@ -1,0 +1,44 @@
+.expert-opinion {
+	/* 1413 390 */
+
+	background-color: var(--bg-color--2);
+}
+.expert-opinion__container {
+	display: flex;
+	justify-content: start;
+	position: relative;
+}
+.expert-opinion__description {
+	padding-top: clamp(46px, 0.397rem + 10.17vw, 150px);
+	padding-bottom: clamp(46px, 0.111rem + 11.34vw, 162px);
+}
+
+.description__title {
+	/* 1413 768 */
+	margin-bottom: clamp(20px, -0.238rem + 3.1vw, 40px);
+}
+.description__text-container {
+	max-width: 670px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+.expert-opinion__img {
+	position: absolute;
+	bottom: 0;
+	right: -1rem;
+	/* mn 1063px mx 1800px */
+	width: clamp(440px, 7.668rem + 29.85vw, 660px);
+	height: clamp(440px, 7.668rem + 29.85vw, 660px);
+}
+@media (width<=1087px) {
+	.expert-opinion__img {
+		display: none;
+		visibility: hidden;
+	}
+}
+@media (width<=1519px) {
+	.expert-opinion__img {
+		transform: translateX(-7px);
+	}
+}
