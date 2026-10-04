@@ -1,0 +1,15 @@
+/* base */
+@import url(./base/fonts.css);
+@import url(./base/normalize.css);
+@import url(./base/globals.css);
+@import url(./base/vars.css);
+/* blocks */
+@import url(./blocs/header.css);
+@import url(./blocs/burger.css);
+@import url(./blocs/menu.css);
+@import url(./blocs/hero.css);
+@import url(./blocs/products-info.css);
+@import url(./blocs/expert-opinion.css);
+@import url(./blocs/hidden-text.css);
+@import url(./blocs/advantages.css);
+@import url(./blocs/offer.css);
