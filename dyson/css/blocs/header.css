@@ -56,6 +56,13 @@
 		margin-left: auto;
 	}
 }
+@media (any-hover: hover) {
+	.menu__link:hover {
+		color: var(--accent-color);
+		transition: color var(--transition-time);
+	}
+}
+
 .basket__icon-menu {
 	stroke: var(--bg-color);
 }

@@ -20,6 +20,7 @@
 		0 2px 21px 0 rgba(0, 0, 0, 0.05);
 	border-radius: 11px;
 	transition: background-color var(--transition-time);
+	cursor: pointer;
 }
 .products-info__card-img {
 	border-radius: 10px;
