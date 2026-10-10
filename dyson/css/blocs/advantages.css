@@ -1,0 +1,112 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
+.advantages__title {
+	margin-bottom: 60px;
+}
+@media (width<=950px) {
+	.advantages__title {
+		margin-bottom: 40px;
+	}
+}
+@media (width<=450px) {
+	.advantages__title {
+		margin-bottom: 30px;
+	}
+}
+.advantages__cards {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+@media (width<=845px) {
+	.advantages__cards {
+		-ms-grid-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media (width<=541px) {
+	.advantages__cards {
+		-ms-grid-columns: 1fr;
+		grid-template-columns: 1fr;
+	}
+}
+.advantages__card {
+	-webkit-box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.05);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 15px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 25px 25px;
+}
+
+@media (width<=541px) {
+	.advantages__card {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+		justify-content: start;
+		gap: 43px;
+		padding: 16px 25px;
+	}
+}
+@media (width<=768px) {
+	.advantages__card-icon {
+		width: 74px;
+		height: 74px;
+	}
+}
+
+.advantages__card-info {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 13px;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	text-align: center;
+}
+@media (width>768px) {
+	.advantages__card-info {
+		gap: 13px;
+	}
+}
+@media (width<=768px) {
+	.advantages__card-info {
+		gap: 8px;
+	}
+}
+.advantages__card-title {
+	text-align: center;
+}
+.advantages__card-text {
+	text-align: center;
+	line-height: 130%;
+}
+@media (width<=541px) {
+	.advantages__card-info {
+		text-align: start;
+	}
+}
