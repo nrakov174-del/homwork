@@ -1,0 +1,121 @@
+.modal {
+	position: fixed;
+	z-index: var(--layer-3);
+	background: var(--overlay-color);
+	width: 100%;
+	height: 100%;
+	inset: 0;
+	text-align: center;
+	overflow-x: hidden;
+	overflow-y: auto;
+	opacity: 0;
+	visibility: hidden;
+	transition:
+		opacity var(--transition-time),
+		visibility var(--transition-time);
+}
+.modal__window {
+	display: inline-block;
+	position: relative;
+	margin-block: 50px;
+	border-radius: 20px;
+	background-color: var(--bg-color);
+}
+@media (width>576px) {
+	.modal__window {
+		padding: 80px;
+	}
+}
+@media (width<=1060px) {
+	.modal__window {
+		padding: 50px;
+	}
+}
+@media (width<576px) {
+	.modal__window {
+		padding: 25px;
+	}
+}
+.modal--open {
+	opacity: 1;
+	visibility: visible;
+}
+
+.modal::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.modal__title {
+	text-align: start;
+	margin: 15px 0;
+}
+.modal__form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: start;
+}
+.modal__input-name {
+	width: 130px;
+	height: 30px;
+}
+.modal__input-mass {
+	width: 365px;
+	height: 100px;
+}
+@media (width>576px) {
+	.modal__input-mass {
+		width: 365px;
+	}
+}
+@media (width<576px) {
+	.modal__input-mass {
+		width: 300px;
+	}
+}
+.modal__buttons {
+	display: flex;
+	gap: 10px;
+}
+.modal__button--res,
+.modal__button--sub {
+	font-size: clamp(1.6rem, 1.29rem + 0.8vw, 2.4rem);
+	padding: clamp(0.7rem, 0.39rem + 0.8vw, 1.5rem)
+		clamp(2.5rem, 1.53rem + 2.5vw, 5rem);
+	background-color: var(--accent-color);
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+	color: #fff;
+	border-radius: 3px;
+	line-height: 1.33;
+	-webkit-transition:
+		color var(--transition-time) var(--animation-time),
+		background-color var(--transition-time) var(--animation-time),
+		-webkit-box-shadow var(--transition-time) var(--animation);
+	transition:
+		color var(--transition-time) var(--animation-time),
+		background-color var(--transition-time) var(--animation-time),
+		-webkit-box-shadow var(--transition-time) var(--animation);
+	transition:
+		color var(--transition-time) var(--animation-time),
+		background-color var(--transition-time) var(--animation-time),
+		box-shadow var(--transition-time) var(--animation);
+	transition:
+		color var(--transition-time) var(--animation-time),
+		background-color var(--transition-time) var(--animation-time),
+		box-shadow var(--transition-time) var(--animation),
+		-webkit-box-shadow var(--transition-time) var(--animation);
+}
+.modal__close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+@media (width<576px) {
+	.modal__close svg {
+		width: 38px;
+		height: 38px;
+	}
+}
